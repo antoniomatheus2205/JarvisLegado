@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Grupo Legado - Acesso</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <img src="img/logo-legado-corretora.png" alt="Logo Grupo Legado" class="logo">
+    <h2>Assessoria de seguros</h2>
+    <p>Bem-vindo à plataforma Legado</p>
+
+    <!-- LOGIN -->
+    <form id="formLogin">
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="senha" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+      <p id="loginErro" class="erro"></p>
+    </form>
+
+    <!-- CADASTRO -->
+    <form id="formCadastroCorretor" class="hidden">
+      <input type="text" name="nome" placeholder="Nome completo" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="senha" placeholder="Senha" required>
+      <button type="submit">Cadastrar</button>
+      <p id="cadastroErro" class="erro"></p>
+    </form>
+
+    <!-- RECUPERAR SENHA -->
+    <form id="formRecuperarSenha" class="hidden">
+      <input type="email" name="email" placeholder="Digite seu email" required>
+      <button type="submit">Enviar nova senha</button>
+      <p id="recuperarErro" class="erro"></p>
+    </form>
+
+    <!-- BOTÕES DE TROCA -->
+    <div class="btn-group">
+      <span class="btn-switch" onclick="mostrar('formLogin')">Já tenho acesso</span>
+      <span class="btn-switch" onclick="mostrar('formCadastroCorretor')">Quero me cadastrar</span>
+      <span class="btn-switch" onclick="mostrar('formRecuperarSenha')">Esqueci minha senha</span>
+    </div>
+  </div>
+
+  <script>
+    function mostrar(id) {
+      document.getElementById('formLogin').classList.add('hidden');
+      document.getElementById('formCadastroCorretor').classList.add('hidden');
+      document.getElementById('formRecuperarSenha').classList.add('hidden');
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

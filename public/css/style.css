@@ -1,0 +1,88 @@
+body.login-page {
+  background-color: #0a2a5f;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #1e3a5f;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #1e3a5f;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  background-color: #1e3a5f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #163250;
+}
+
+.btn-group {
+  margin-top: 20px;
+}
+
+.btn-switch {
+  font-size: 14px;
+  color: #1e3a5f;
+  cursor: pointer;
+  text-decoration: underline;
+  display: block;
+  margin: 5px 0;
+}
+
+.btn-switch:hover {
+  color: #163250;
+}
+
+.hidden {
+  display: none;
+}
+
+.erro {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
